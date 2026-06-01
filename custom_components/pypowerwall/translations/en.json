@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Powerwall",
+        "description": "Enter the local gateway details. Find the gateway IP in your router's DHCP table or the Tesla app. The gateway password is the Wi-Fi password for the Tesla Gateway's own access point — it is printed on the QR label on the Tesla Energy Gateway unit (not the Powerwall battery unit), and is separate from the Powerwall's own Wi-Fi credentials.",
+        "data": {
+          "pw_host": "Gateway IP address",
+          "pw_gw_pwd": "Tesla Gateway Wi-Fi password",
+          "pw_timezone": "Timezone (e.g. America/New_York)",
+          "scan_interval": "Update interval (seconds)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect — check the IP address and gateway password.",
+      "unknown": "Unexpected error. Check the Home Assistant logs."
+    },
+    "abort": {
+      "already_configured": "This Powerwall gateway is already configured."
+    }
+  }
+}
