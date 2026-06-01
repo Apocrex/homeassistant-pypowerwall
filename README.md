@@ -1,6 +1,8 @@
 # homeassistant-pypowerwall
 
-Custom Home Assistant ntegration for Tesla Powerwall 3 systems. This might work for Powerwall 2 and Powerwall+ systems too, as this really is just a front-end for [pypowerwall](https://github.com/jasonacox/pypowerwall).
+Custom Home Assistant integration for Tesla Powerwall 3 systems. This might work for Powerwall 2 and Powerwall+ systems too, as this really is just a front-end for [pypowerwall](https://github.com/jasonacox/pypowerwall).
+
+Mostly this is a quick integration made in anger. Hopefully it works for others and saves some headache.
 
 
 ## Exposed Entities
@@ -24,11 +26,6 @@ Custom Home Assistant ntegration for Tesla Powerwall 3 systems. This might work 
 | Backup Time Remaining | h | |
 | Battery Reserve | % | Configured backup reserve |
 | Battery Mode | — | self_consumption / backup / autonomous |
-
-
-### Energy Dashboard
-
-The six `*_energy_*` sensors (kWh, `state_class: total_increasing`) can be added directly in **Settings → Energy → Configure** without any additional YAML.
 
 
 ## Installation
